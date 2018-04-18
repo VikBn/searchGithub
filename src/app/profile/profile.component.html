@@ -1,0 +1,80 @@
+<div class="start__form">
+  <div class="container start__inner">
+    <div class="col-lg-1 col-md-2 col-sm-2 col-3 start__logo">
+      <img class="start__icon" src="assets/img/github-logo.svg">
+    </div>
+    <div class="col-lg-11 col-md-10 col-sm-10 col-9">
+      <div class="form-group">
+        <input [(ngModel)]="searchString"
+               (ngModelChange)="searchUser()"
+               [minlength]="minLength"
+               name="userName" type="text"
+               class="form-control start__input"
+               placeholder="Search Github">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="start" *ngIf="isLoaded">
+    <div class="container start__container">
+      <div class="col-md-12 col-sm-12 col-lg-3 col-xl-3">
+        <div class="start__aside">
+          <div class="start__avatar">
+             <img class="start__img"
+                  [src]="user.avatar_url" [alt]="user.name">
+          </div>
+           <div>
+              <h3 class="start__name">{{user.name}}</h3>
+              <p class="start__subName">{{user.login}}</p>
+              <p class="start__bio">{{user.bio}}</p>
+              <p class="start__location">{{user.location}}</p>
+              <a target="_blank" [href]="user.html_url"><button type="button" class="btn btn-primary btn-lg">View Profile</button></a>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-lg-9 col-xl-9">
+         <div class="start__top">
+           <div class="start__box">
+             <span class="start__sub">Repositories</span>
+             <span class="start__sub-num">{{user.public_repos}}</span>
+           </div>
+           <div class="start__box">
+             <span class="start__sub">Followers</span>
+             <span class="start__sub-num">{{user.followers}}</span>
+           </div>
+           <div class="start__box">
+             <span class="start__sub">Following</span>
+             <span class="start__sub-num">{{user.following}}</span>
+           </div>
+         </div>
+
+         <p class="start__title">Repositories</p>
+
+         <div class="start__repos">
+
+           <div class="start__repo" *ngFor="let repo of repos">
+             <div class="start__repo-top">
+               <a href="#" class="start__repo-title">{{repo.name}}</a>
+               <p class="start__repo-descr">{{repo.description}}</p>
+             </div>
+             <div class="start__repo-box">
+               <div class="start__repo-box">
+                 <div class="start__repo-mark {{repo.language}}"></div>
+                 <span class="start__repo-span">{{repo.language}}</span>
+               </div>
+               <div class="start__repo-box">
+                <img src="assets/img/star.svg" alt="star">
+                 <span class="start__repo-span">{{repo.stargazers_count}}</span>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+

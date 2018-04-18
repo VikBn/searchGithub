@@ -1,0 +1,137 @@
+.start {
+  padding: 30px 0;
+}
+.start__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.start__form {
+  background-color: #24292e;
+  padding: 30px 0;
+}
+.start__inner {
+  display: flex;
+  align-items: center;
+}
+.start__icon {
+  width: 50px;
+  height: 50px;
+}
+.start__input {
+  background-color: #3f4448;
+  border: none;
+  color: lightgray;
+  margin-top: 15px;
+}
+.start__top {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 20px 0;
+   border-bottom: 1px solid #d1d5da;
+ }
+.start__img {
+   width: 200px;
+   height: 200px;
+   border-radius: 5px;
+ }
+.start__box {
+   margin-right: 30px;
+ }
+.start__title{
+   font-size: 16px;
+   margin-top: 30px;
+ }
+.start__sub {
+  font-size: 14px;
+  font-weight: bold;
+}
+.start__bio {
+  font-size: 14px;
+  color: gray;
+}
+
+.start__sub-num{
+   background-color: #ededee;
+   border-radius: 50%;
+   padding: 1px 3px;
+ }
+
+.start__repos{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+.start__location{
+   margin: 20px 0;
+ }
+.start__repo{
+   width: 49%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 15px 10px 15px 20px;
+   border: 1px solid #d1d5da;
+   margin: 15px 5px 0 0;
+ }
+.start__repo-title{
+   color: #0366de;
+   font-size: 15px;
+ }
+.start__repo-descr{
+   font-size: 12px;
+   color: gray;
+   margin: 15px 0 20px 0;
+ }
+.start__repo-box{
+   display: flex;
+   align-items: center;
+   margin-right: 15px;
+ }
+.start__repo-span{
+   margin-left: 5px;
+ }
+.start__repo-stars{
+   display: flex;
+   align-items: center;
+ }
+.start__repo-mark{
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color:#178600;
+ }
+
+.HTML {
+  background-color:#e34c26;
+}
+.TypeScript {
+  background-color:#2b7489;
+}
+.JavaScript {
+  background-color:#f1e05a;
+}
+.Java {
+  background-color:#b07219;
+}
+.CSS {
+  background-color:#563d7c;
+}
+.Visual Basic {
+  background-color:#945db7;
+}
+.Python {
+  background-color:#3572A5;
+}
+.C {
+  background-color:#555555;
+}
+.Lua {
+  background-color:#000080;
+}
+.Shell {
+  background-color:#89e051;
+}
+.PHP {
+  background-color:#4F5D95;
+}

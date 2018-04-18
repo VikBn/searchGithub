@@ -1,0 +1,46 @@
+
+@media (max-width: 576px) {
+    .start__repo {
+        width: 98% !important;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .start__box {
+        margin-top: 5px;
+    }
+    .start__aside {
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .start__repo {
+      width: 98% !important;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+    .start__aside {
+      text-align: center;
+    }
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .start__aside {
+    text-align: center;
+  }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+
+@media (min-width: 1200px) {
+
+}
