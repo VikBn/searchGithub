@@ -57,7 +57,7 @@
 
            <div class="start__repo" *ngFor="let repo of repos">
              <div class="start__repo-top">
-               <a href="#" class="start__repo-title">{{repo.name}}</a>
+               <a [href]="repo.html_url" class="start__repo-title">{{repo.name}}</a>
                <p class="start__repo-descr">{{repo.description}}</p>
              </div>
              <div class="start__repo-box">
