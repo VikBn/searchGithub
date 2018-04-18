@@ -90,6 +90,7 @@
  }
 .start__repo-span{
    margin-left: 5px;
+   font-size: 14px;
  }
 .start__repo-stars{
    display: flex;
